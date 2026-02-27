@@ -1,1 +1,18 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+*{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: cyan;
+}
+
+button {
+  cursor: pointer;
+}
