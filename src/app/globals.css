@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: cyan;
+  background: rgb(218, 27, 218);
 }
 
 button {
