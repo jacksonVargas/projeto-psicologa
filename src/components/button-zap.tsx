@@ -5,7 +5,7 @@ export function ButtonZap() {
     <a
       href='#'
       target='_blank'
-      className='transition-all duration-300 hover:scale-103 fixed z-99 right-5 bottom-10 w-13 h-13 rounded-full bg-cyan-600 text-white flex justify-center items-center'
+      className='transition-all duration-300 hover:scale-103 fixed z-99 right-5 bottom-10 w-13 h-13 rounded-full bg-purple-500 text-white flex justify-center items-center'
     >
       <FaWhatsapp size={23} />
     </a>

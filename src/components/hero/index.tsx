@@ -18,7 +18,7 @@ export function Hero() {
             className='object-cover w-full h-full'
           />
 
-          <div className='absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/60' />
+          <div className='absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/70' />
         </div>
 
         <div className='relative z-10 space-y-2 max-w-3xl'>
@@ -35,14 +35,14 @@ export function Hero() {
             <a
               href='#'
               target='_blank'
-              className='transition-all duration-300 hover:-translate-y-1 py-2 px-5 bg-cyan-600 text-white rounded'
+              className='transition-all duration-300 hover:-translate-y-1 py-2 px-5 bg-purple-500 text-white rounded'
             >
               Agendar Consulta
             </a>
             
             <a
               href='#services'
-              className='transition-all duration-300 hover:-translate-y-1 py-2 px-5 bg-cyan-600 text-white rounded'
+              className='transition-all duration-300 hover:-translate-y-1 py-2 px-5 bg-white text-purple-500 rounded'
             >
               Meu Trabalho
             </a>

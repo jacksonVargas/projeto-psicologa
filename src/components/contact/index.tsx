@@ -6,21 +6,19 @@ export function Contact() {
     <Container>
       <section id='contact' className='py-15 grid md:grid-cols-2 gap-7'>
         <div className='space-y-2'>
-          <h3 className='uppercase text-cyan-600 text-sm tracking-[3px]'>
-            Contato
-          </h3>
+          <h3 className='uppercase text-purple-500 text-sm tracking-[3px]'>Contato</h3>
           <h1 className='text-3xl md:text-4xl'>
-            Vamos começar sua <span className='text-cyan-600'>jornada</span>
+            Vamos começar sua <span className='text-purple-500'>jornada</span>
           </h1>
           <h2 className='text-zinc-500 md:text-sm mb-8'>
-            Entre em contato para agendar sua primeira consulta ou tirar
-            dúvidas. O primeiro passo é sempre o mais importante.
+            Entre em contato para agendar sua primeira consulta ou tirar dúvidas. O
+            primeiro passo é sempre o mais importante.
           </h2>
 
           <div className='grid gap-4'>
-            {icons.map((icon) => (
+            {icons.map(icon => (
               <div key={icon.name} className='flex items-center gap-4'>
-                <div className='w-10 h-10 rounded-lg flex justify-center items-center bg-cyan-600 text-white'>
+                <div className='w-10 h-10 rounded-lg flex justify-center items-center bg-purple-500 text-white'>
                   {icon.icon}
                 </div>
                 <div>
