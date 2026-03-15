@@ -8,7 +8,7 @@ export function About() {
     <Container>
       <section id='about' className='py-15 grid md:grid-cols-2 gap-7'>
         <div className='w-full space-y-2'>
-          <h3 className='text-purple-500 text-sm font-medium'>SOBRE MIM</h3>
+          <h3 className='text-purple-600 text-sm'>SOBRE MIM</h3>
           <h2 className='text-3xl md:text-4xl font-semibold'>Um espaço seguro para <span className='text-purple-500'>você ser você</span></h2>
           <p className='md:text-sm text-zinc-500 mb-8'>
             Sou Carolina Mendes, psicóloga clínica com formação em Terapia

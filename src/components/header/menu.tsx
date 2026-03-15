@@ -49,6 +49,7 @@ export function MenuItems() {
 
           <button
             type='button'
+            aria-label='Button menu'
             onClick={() => setOpen(!open)}
             className='text-purple-500 md:hidden'
           >
@@ -58,24 +59,29 @@ export function MenuItems() {
           {/* Desktop */}
           <ul className='hidden md:flex items-center gap-6'>
             {links.map(link => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className={`hover:text-purple-500 md:text-sm ${scroll ? 'text-zinc-500' : 'text-white'}`}
-              >
-                {link.label}
-              </a>
+              <li key={link.label}>
+                <a
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className={`hover:text-purple-500 md:text-sm ${scroll ? 'text-zinc-500' : 'text-white'}`}
+                >
+                  {link.label}
+                </a>
+              </li>
             ))}
 
-            <a
-              href='#'
-              target='_blank'
-              onClick={() => setOpen(false)}
-              className='md:text-sm transition-all duration-300 hover:scale-103 py-2 px-5 rounded bg-purple-500 text-white w-fit'
-            >
-              Agendar
-            </a>
+            <li>
+              <a
+                href='#'
+                target='_blank'
+                rel='noopener noreferrer'
+                aria-label='Agendar horário pelo whatsapp'
+                onClick={() => setOpen(false)}
+                className='md:text-sm transition-all duration-300 hover:scale-103 py-2 px-5 rounded bg-purple-600 text-white w-fit'
+              >
+                Agendar
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -97,24 +103,29 @@ export function MenuItems() {
 
             <ul className='grid gap-5'>
               {links.map(link => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className='text-zinc-500 hover:text-purple-500'
-                >
-                  {link.label}
-                </a>
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className='text-zinc-500 hover:text-purple-500'
+                  >
+                    {link.label}
+                  </a>
+                </li>
               ))}
 
-              <a
-                href='#'
-                target='_blank'
-                onClick={() => setOpen(false)}
-                className='transition-all duration-300 hover:scale-103 py-2 px-5 rounded bg-purple-500 text-white w-fit'
-              >
-                Agendar
-              </a>
+              <li>
+                <a
+                  href='#'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='Agendar horário pelo whatsapp'
+                  onClick={() => setOpen(false)}
+                  className='transition-all duration-300 hover:scale-103 py-2 px-5 rounded bg-purple-600 text-white w-fit'
+                >
+                  Agendar
+                </a>
+              </li>
             </ul>
           </div>
         </div>

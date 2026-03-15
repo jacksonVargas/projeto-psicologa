@@ -4,6 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Dra. Carolina',
+  description: 'Cuidar da mente é um ato de coragem',
 }
 
 const font = Montserrat({ subsets: ['latin'], weight: ['500'] })
